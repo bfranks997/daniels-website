@@ -262,6 +262,10 @@ footer {
         max-width: 90%; /* Ensure service items fit within mobile screen */
     }
 
+    .service p{
+        max-width: 80%;
+    }
+
     footer {
         padding: 1em 0;
     }
