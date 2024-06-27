@@ -3,6 +3,7 @@ body {
     font-family: 'Playfair Display', serif;
     color: #fff;
     background-color: #000;
+    text-align: center; /* Center text globally */
 }
 
 header {
@@ -206,4 +207,82 @@ footer {
 @keyframes flipInY {
     from { transform: perspective(400px) rotateY(90deg); }
     to { transform: perspective(400px) rotateY(0deg); }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    body {
+        text-align: center; /* Ensure text is centered */
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 1em 2em;
+        align-items: center; /* Center align items in nav */
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center; /* Center align nav links */
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 1em;
+    }
+
+    .logo {
+        margin-bottom: 1em;
+        font-size: 2em;
+    }
+
+    .hero {
+        padding: 4em 1em;
+    }
+
+    .hero h1 {
+        font-size: 1.8em; /* Smaller font size for mobile */
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    section p {
+        max-width: 90%;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center; /* Center align services */
+    }
+
+    .service {
+        margin: 1em auto;
+        max-width: 90%; /* Ensure service items fit within mobile screen */
+    }
+
+    footer {
+        padding: 1em 0;
+    }
+
+    #about img {
+        max-width: 90%;
+        height: auto;
+        margin: 1em auto;
+    }
+
+    #contact-form label {
+        display: block; /* Ensure labels are on a new line */
+        margin-top: 1em; /* Add some space above labels */
+        text-align: left; /* Align labels to the left */
+    }
+
+    #contact-form input, #contact-form textarea, #contact-form button {
+        width: 90%;
+        margin: 0.5em 0; /* Space out form elements */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
