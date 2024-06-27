@@ -1,29 +1,29 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #333;
     background-color: #f3f4f6;
 }
 
 header {
-    background: #ff5722;
+    background: #B8860B; /* Dark Goldenrod */
     color: #fff;
-    padding: 1em 0;
+    padding: 2em 0; /* Increased padding for bigger navbar */
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2em;
+    padding: 0 4em; /* Increased padding for bigger navbar */
 }
 
 .logo {
-    font-size: 1.5em;
+    font-size: 2.5em; /* Increased font size */
     font-weight: bold;
-    border-radius: 50%;
     padding: 10px;
-    background: #333;
+    background: #8B0000; /* Dark Red */
+    color: #fff;
 }
 
 .nav-links {
@@ -34,42 +34,41 @@ nav {
 }
 
 .nav-links li {
-    margin-left: 1em;
+    margin-left: 2em; /* Increased margin for bigger navbar */
 }
 
 .nav-links a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 50%;
-    padding: 10px;
+    padding: 15px; /* Increased padding for bigger navbar */
     transition: all 0.3s ease;
 }
 
 .nav-links a:hover {
-    background: #fff;
-    color: #ff5722;
+    background: #8B0000; /* Dark Red */
+    color: #B8860B; /* Dark Goldenrod */
     transform: scale(1.2);
 }
 
 .hero {
-    background: linear-gradient(45deg, #ff5722, #ff9800);
+    background: linear-gradient(45deg, #B8860B, #8B0000); /* Dark Goldenrod to Dark Red */
     color: #fff;
     text-align: center;
-    padding: 4em 1em;
+    padding: 6em 1em; /* Increased padding */
     border-radius: 50%;
     position: relative;
 }
 
 .hero h1 {
-    font-size: 2.5em;
+    font-size: 3.5em; /* Increased font size */
     position: relative;
     z-index: 1;
     animation: fadeIn 2s;
 }
 
 .hero p {
-    font-size: 1.2em;
+    font-size: 1.5em; /* Increased font size */
     position: relative;
     z-index: 1;
     animation: slideIn 2s;
@@ -123,8 +122,8 @@ section {
 }
 
 section h2 {
-    font-size: 2em;
-    color: #ff5722;
+    font-size: 2.5em; /* Increased font size */
+    color: #B8860B; /* Dark Goldenrod */
     margin-bottom: 1em;
     animation: bounceIn 2s;
 }
@@ -146,7 +145,7 @@ section p {
     flex: 1;
     min-width: 250px;
     margin: 1em;
-    background: #ffeb3b;
+    background: #B8860B; /* Dark Goldenrod */
     padding: 1em;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -155,12 +154,13 @@ section p {
 }
 
 .service:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    transform: scale(1.1);
+    box-shadow: 0 0 40px rgba(0,0,0,0.2);
+    animation: flipInY 1s;
 }
 
 .service h3 {
-    font-size: 1.5em;
+    font-size: 1.8em; /* Increased font size */
     color: #333;
     animation: zoomIn 2s;
 }
@@ -168,22 +168,22 @@ section p {
 .service p {
     color: #555;
     animation: zoomIn 2s;
-    max-width: 50%;
+    max-width: 65%;
 }
 
 .service img {
     width: 100%;
     height: auto;
     margin-top: 1em;
-    border-top: 3px solid #ff5722;
+    border-top: 3px solid #8B0000; /* Dark Red */
     border-radius: 50%;
 }
 
 footer {
-    background: #ff5722;
-    color: #fff;
+    background: #8B0000; /* Dark Red */
+    color: #B8860B; /* Dark Goldenrod */
     text-align: center;
-    padding: 1em 0;
+    padding: 2em 0; /* Increased padding */
     border-radius: 50%;
     animation: slideIn 2s;
 }
