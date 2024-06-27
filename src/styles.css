@@ -1,12 +1,12 @@
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    color: #333;
-    background-color: #f3f4f6;
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    background-color: #000;
 }
 
 header {
-    background: #B8860B; /* Dark Goldenrod */
+    background: #000; /* Black */
     color: #fff;
     padding: 2em 0; /* Increased padding for bigger navbar */
 }
@@ -22,8 +22,8 @@ nav {
     font-size: 2.5em; /* Increased font size */
     font-weight: bold;
     padding: 10px;
-    background: #8B0000; /* Dark Red */
-    color: #fff;
+    background: #fff; /* White */
+    color: #000; /* Black */
 }
 
 .nav-links {
@@ -46,13 +46,13 @@ nav {
 }
 
 .nav-links a:hover {
-    background: #8B0000; /* Dark Red */
-    color: #B8860B; /* Dark Goldenrod */
+    background: #fff; /* White */
+    color: #000; /* Black */
     transform: scale(1.2);
 }
 
 .hero {
-    background: linear-gradient(45deg, #B8860B, #8B0000); /* Dark Goldenrod to Dark Red */
+    background: linear-gradient(45deg, #fff, #000); /* White to Black */
     color: #fff;
     text-align: center;
     padding: 6em 1em; /* Increased padding */
@@ -106,16 +106,6 @@ nav {
     border-radius: 50%;
 }
 
-.ad-space {
-    margin: 2em 0;
-    padding: 2em;
-    background: #eaeaea;
-    text-align: center;
-    border: 1px dashed #ccc;
-    border-radius: 50%;
-    animation: rotateIn 2s;
-}
-
 section {
     padding: 2em 1em;
     text-align: center;
@@ -123,15 +113,15 @@ section {
 
 section h2 {
     font-size: 2.5em; /* Increased font size */
-    color: #B8860B; /* Dark Goldenrod */
+    color: #fff; /* White */
     margin-bottom: 1em;
     animation: bounceIn 2s;
 }
 
 section p {
-    max-width: 600px;
+    max-width: 60%;
     margin: 0 auto;
-    color: #555;
+    color: #aaa;
     animation: fadeIn 2s;
 }
 
@@ -145,43 +135,42 @@ section p {
     flex: 1;
     min-width: 250px;
     margin: 1em;
-    background: #B8860B; /* Dark Goldenrod */
+    background: #333; /* Dark Gray */
     padding: 1em;
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: flipInY 2s;
 }
 
 .service:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 40px rgba(0,0,0,0.2);
-    animation: flipInY 1s;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    animation: flipInY 2s;
 }
 
 .service h3 {
     font-size: 1.8em; /* Increased font size */
-    color: #333;
+    color: #fff;
     animation: zoomIn 2s;
 }
 
 .service p {
-    color: #555;
+    color: #aaa;
     animation: zoomIn 2s;
-    max-width: 65%;
 }
 
 .service img {
     width: 100%;
     height: auto;
     margin-top: 1em;
-    border-top: 3px solid #8B0000; /* Dark Red */
+    border-top: 3px solid #fff; /* White */
     border-radius: 50%;
 }
 
 footer {
-    background: #8B0000; /* Dark Red */
-    color: #B8860B; /* Dark Goldenrod */
+    background: #000; /* Black */
+    color: #fff; /* White */
     text-align: center;
     padding: 2em 0; /* Increased padding */
     border-radius: 50%;
